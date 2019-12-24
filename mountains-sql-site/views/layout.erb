@@ -6,32 +6,36 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <h1>Mountains of the World</h1>
+    <!-- <h1></h1> -->
     <nav>
-      <ul>
-        <a href="/">
+      <div class="nav-wrapper">
+        <img class="header-logo" src="/images/13443-NP0HBP.png" alt="mountain logo">
+        <ul>
+          <a href="/">
+            <li>
+              Home Page
+            </li>
+          </a>
+          <a href="/mountains">
           <li>
-            Home Page
+            Index Page
           </li>
-        </a>
-        <a href="/mountains">
-        <li>
-          Index Page
-        </li>
-        </a>
-        <a href="/mountains/new">
-          <li>
-            Add New Mountain
-          </li>
-        </a>
-      </ul>
+          </a>
+          <a href="/mountains/new">
+            <li>
+              Add New Mountain
+            </li>
+          </a>
+        </ul>
+      </div>
     </nav>
+    <div class="content-container">
 
-    <hr>
 
       <%= yield %>
 
-    <hr>
+
+    </div>
     <footer>
       &copy; Mount Mallroy 2019
     </footer>
