@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif&display=swap');
 
 body {
   margin: 0;
   padding: 1em;
   font-family: 'Girassol', cursive;
-}
 
-body {
-  /* background-image: url('https://us.v-cdn.net/5021068/uploads/editor/yc/qqtx9k2cy43v.jpg'); */
   background-image: url('https://i.pinimg.com/originals/a7/25/59/a72559a7f9e698215ff9986a4d3989dd.jpg');
-
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
 
+p {
+  font-family: 'Inria Serif', serif;
 }
 
 footer {
@@ -62,17 +61,41 @@ a {
       margin: 0vw 5vw;
 }
 
-a:hover{
+nav a:hover{
   background-color: #C6E9FF;
   color: white;
 }
 
+a#hp-button {
+  margin: 0;
+  position: absolute;
+  padding: 0.5em; /* Arrow size */
+  box-shadow: 1px -1px 0 1px black inset;
+  -webkit-box-shadow: 2px -2px black inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+  transform: rotate(220deg)
 
+}
+
+a#hp-button:hover {
+  box-shadow: 2px -2px 0 2px white inset;
+  padding: 1em;
+}
 
 /* homepage css */
-#homepage-wrapper {
+#content-wrapper {
   height: 20em;
   width: 20em;
   /* border: 1px solid red; */
   margin: 8em 20em;
+}
+
+#homepage-greeting {
+  margin: 0 auto;
+}
+
+#homepage-text{
+  margin: 0.5em auto;
 }
