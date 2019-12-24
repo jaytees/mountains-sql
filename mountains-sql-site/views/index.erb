@@ -1,0 +1,14 @@
+<h2>
+  Your Exploration Begins Here!
+</h2>
+
+
+<ul>
+
+  <% @mountains.each do | mountain | %>
+        <a href="/mountains/<%= mountain['id']%>">
+          <li> <%= mountain['mountain'] %> </li>
+        </a>
+  <% end %>
+
+</ul>

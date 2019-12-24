@@ -1,0 +1,38 @@
+<h2><%= @mountains['mountain']%></h2>
+
+
+<a href="/climbers/new/<%= @mountains['id']%>"><button type="button" name="Add Climber">Add Climber</button></a>
+
+
+<p>
+  <strong>Country:</strong>
+  <%= @mountains['country'] %>
+</p>
+<p>
+  <strong>Range:</strong>
+  <%= @mountains['range'] %>
+</p>
+<p>
+  <strong>Height:</strong>
+  <%= @mountains['height'] %>
+</p>
+<p>
+  <strong>First Ascent:</strong>
+  <%= @mountains['first_ascent'] %>
+</p>
+
+<p>
+  <strong>Summited by:</strong>
+  <ul>
+    <% @mountains.climbers.each do |climber| %>
+
+          <li>
+            <%= climber.name %> (<%= climber.year %>)
+          </li>
+
+    <% end %>
+  </ul>
+</p>
+
+
+<img src="<%= @mountains['image_url'] %>" alt="Image of <%= @mountains['mountain']%> ">

@@ -1,0 +1,25 @@
+<h2>Add New climber</h2>
+
+
+<label>
+  Mountain: <%= @mountains['mountain']%>
+</label>
+<br>
+
+<form action="/climbers" method="post">
+  <label>
+    Name:
+    <input type="text" name="name">
+  </label>
+<br>
+  <label>
+    Year:
+    <input type="text" name="year">
+  </label>
+<br>
+    <input type="hidden" name="mountain_id" value="<%= @mountains['id']%>">
+<br>
+  <input type="submit" name="" value="Add Climber!">
+
+
+</form>
